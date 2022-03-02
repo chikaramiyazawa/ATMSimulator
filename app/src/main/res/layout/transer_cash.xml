@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="現金お振り込み画面"/>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="口座番号"/>
+            <EditText
+                android:id = "@+id/txtnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="7"
+                android:inputType="number"
+                android:digits="0123456789">
+                <requestFocus/>
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="お振込金額"/>
+            <EditText
+                android:id="@+id/txtcash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:maxLength="9"/>
+        </TableRow>
+        <Button
+            android:id = "@+id/btnDeposit"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:onClick="onTrancer_Cash"
+            android:text="お振込み"/>
+        <Button
+            android:id = "@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onBack"
+            android:text="中止"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/txtpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="4"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:focusable="false"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/txtmoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>

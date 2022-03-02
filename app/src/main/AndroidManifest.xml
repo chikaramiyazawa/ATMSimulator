@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="to.msn.wings.atmsimulator">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@raw/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@raw/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ATMSimulator">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Registration"></activity>
+        <activity android:name=".Inquery"></activity>
+        <activity android:name=".Drawer"></activity>
+        <activity android:name=".DrawerActivity"></activity>
+        <activity android:name=".Deposit"></activity>
+        <activity android:name=".DepositActivity"></activity>
+        <activity android:name=".Transer_Select"></activity>
+        <activity android:name=".Transer_Cash"></activity>
+        <activity android:name=".Transer"></activity>
+        <activity android:name=".Transer_balance"></activity>
+        <activity android:name=".ForgetPassword"></activity>
+        <activity android:name=".ForgetNumber"></activity>
+    </application>
+
+</manifest>
